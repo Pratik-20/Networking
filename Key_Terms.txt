@@ -1,0 +1,11 @@
+ILL (Internet Leased Line): An Internet leased line is a dedicated connection that provides high-speed internet access. Unlike broadband, which is shared among multiple users,
+                           an ILL is not shared and offers consistent performance without bandwidth reduction. It’s commonly used for businesses and organizations that require reliable and secure connectivity.
+
+MPLS (Multiprotocol Label Switching): MPLS is a private network connection that links data centers and branch offices. It’s typically managed by service providers who guarantee network performance,
+                                     quality, and availability. While MPLS is reliable and secure, it can be expensive. Traditional MPLS-based WANs often backhaul traffic through a centralized data center, which can impact performance and user experience.
+
+SD-WAN (Software-Defined Wide Area Network): SD-WAN is an overlay network that manages multiple types of connections, including MPLS, broadband, and LTE. 
+                                            It dynamically routes traffic over the best path in real time, improving performance and allowing direct internet access for cloud-bound traffic at branch locations.
+
+Broadband Internet: Broadband internet refers to standard internet connectivity provided by ISPs. It’s essential for connecting branches directly to the internet,
+                   especially as more applications move to the cloud. Bandwidth demands are increasing due to connected devices and bandwidth-intensive apps.
