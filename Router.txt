@@ -1,0 +1,27 @@
+A router is a crucial networking device that plays a central role in connecting computer networks and facilitating the flow of data packets between them. Let’s dive into the details:
+
+Function of a Router:
+A router forwards data packets between different computer networks or subnetworks.
+It manages traffic by sending data packets to their intended IP addresses.
+Multiple devices can share an internet connection through a router.
+
+How Does a Router Work?:
+When you request a webpage (e.g., www.google.com) in your web browser, your system sends a stream of data packets.
+These packets don’t go directly to Google’s server. Instead, they pass through a series of networking devices, including routers.
+The router examines the destination IP address in the packet header and compares it to its routing database.
+Based on routing rules, the router determines the most effective path to transmit the data to the specified IP address.
+Routers often connect to multiple host systems via various interfaces.
+
+Network Layer and OSI Model:
+Routers operate at the Network Layer of the OSI Model.
+They are the most common devices used in networking.
+Routing Tables:
+Routers use routing tables to decide where to deliver data and where traffic originates.
+These tables specify the router’s default path.
+Dynamic routing tables update automatically based on network activity, while static routing tables are configured manually.
+
+Types of Routers:
+Broadband Routers: These are essential for connecting computers and accessing the internet.
+Wireless Routers: Create wireless signals in homes or offices.
+Wired Routers: Connect multiple wired devices using Ethernet cables. Commonly used in schools and small offices.
+In summary, routers are the backbone of internet connectivity, ensuring efficient data transmission across networks. 🌐🔗
