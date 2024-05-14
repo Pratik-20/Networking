@@ -1,0 +1,34 @@
+CST,PVST and PVST+ In Networking
+
+-------------------------------------------------------
+
+
+Common Spanning Tree (CST):
+CST is the oldest version of spanning tree and is defined in the 802.1D standard.
+It calculates a single spanning tree for all VLANs in the network.
+In CST, there is only one root bridge for the entire network, regardless of the VLANs.
+CST is not aware of VLANs and treats all VLANs as a single broadcast domain.
+It’s a legacy protocol and not commonly used in modern networks.
+Per VLAN Spanning Tree (PVST):
+PVST is an enhancement over CST and is the default on Cisco switches.
+Unlike CST, PVST calculates a separate spanning tree for each VLAN.
+Each VLAN can have its own root bridge, which allows better load balancing and utilization of network resources.
+For example, SW1 could be the root bridge for VLAN 10, while SW2 could be the root bridge for VLAN 20.
+PVST ensures that interfaces are not unnecessarily blocked for all VLANs.
+It’s more efficient than CST but still has some limitations.
+
+
+
+Rapid PVST+ (RPVST+):
+Beginning from Cisco IOS 15.2 (4)E release, the default STP mode is RPVST+.
+RPVST+ is an evolution of PVST+ with faster convergence times.
+Like PVST+, it calculates a separate spanning tree for each VLAN.
+RPVST+ improves network stability and reduces downtime during topology changes.
+It’s widely used in modern Cisco networks.
+
+
+In summary:
+
+PVST+ (or simply PVST) is the default on Cisco switches, calculating a separate spanning tree for each VLAN.
+RPVST+ is an enhanced version of PVST+ with faster convergence.
+CST is the legacy spanning tree that calculates a single spanning tree for all VLANs.
