@@ -39,4 +39,27 @@ switch(config)# spanning-tree mode rapid-pvst
 Verify Configuration:
 switch# show spanning-tree summary
 
-Remember that PVST+ and Rapid PVST+ enhance network stability and reduce convergence time
+Remember that PVST+ and Rapid PVST+ enhance network stability and reduce convergence time.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Calculating the Path Cost and determining the Root Bridge are crucial for maintaining a stable network topology using Spanning Tree Protocols (STP) like PVST+ and Rapid PVST+. Let’s dive into the reasons behind these calculations:
+
+Path Cost Calculation:
+The path cost represents the cumulative cost of traversing a path from a switch to the root bridge. It ensures that the shortest path (lowest cost) is chosen as the active path for forwarding traffic.
+Why calculate it? Because it helps switches determine the best path to reach the root bridge. Each link (port) has an associated cost based on its speed (bandwidth). Faster links have lower costs.
+Example: If a Gigabit Ethernet link has a cost of 4 and a Fast Ethernet link has a cost of 19, the switch will prefer the Gigabit link.
+
+Bridge Selection:
+The root bridge is the central switch in the network. All other switches aim to connect to it.
+Why calculate it? Because the root bridge ensures a loop-free topology. By selecting the switch with the lowest Bridge ID (priority + MAC address), we establish a single reference point for the entire network.
+The root bridge periodically sends BPDUs (Bridge Protocol Data Units) to announce its existence and gather information from other switches.
+
+Port Roles (Root Port and Designated Port):
+Root Port: The port closest to the root bridge. It receives BPDUs from the root bridge.
+Designated Port: The port that forwards traffic toward the root bridge.
+Why calculate it? These roles help prevent loops by ensuring that only one path exists between any two switches.
+
+In summary, calculating path costs and selecting the root bridge are fundamental to maintaining a loop-free network. These calculations allow switches to make informed decisions about forwarding paths and ensure efficient data transmission. 🌐
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
