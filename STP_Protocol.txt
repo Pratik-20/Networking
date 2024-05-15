@@ -1,0 +1,33 @@
+Spanning Tree Protocol (STP)
+
+Definition:
+STP is an IEEE 802.1d protocol designed to prevent loops in a Local Area Network (LAN).
+It ensures that there is only one active path between any two network devices.
+By creating a loop-free topology, STP prevents broadcast storms and network congestion.
+
+How It Works:
+
+STP initializes by selecting a root bridge (usually the switch with the lowest Bridge ID).
+Each switch then calculates the least-cost path to the root bridge.
+Ports are classified as root, designated, or blocked based on their role in the spanning tree.
+Blocked ports prevent loops by disabling redundant paths.
+
+Pros and Cons:
+
+Pros:
+
+Ensures network stability by preventing loops.
+Automatically adapts to changes in the network topology.
+
+Cons:
+
+Consumes bandwidth due to blocked ports.
+Can cause suboptimal path selection.
+
+
+EtherChannels:
+
+EtherChannels aggregate multiple physical links into a single logical link.
+They allow STP to use the full available bandwidth across these links.
+EtherChannels prevent STP from blocking unused ports.
+
