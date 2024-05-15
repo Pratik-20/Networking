@@ -1,0 +1,54 @@
+Link Layer Discovery Protocol (LLDP)
+
+Definition:
+LLDP is an IEEE-standard (802.1AB) Layer 2 protocol.
+Unlike CDP, which is specific to Cisco devices, LLDP is vendor-neutral and works across various networking equipment.
+It allows devices to advertise their identity, capabilities, and neighboring devices on a local area network (LAN).
+
+How It Works:
+
+LLDP operates at Layer 2 (data link layer) and helps identify network components in the immediate area.
+Devices exchange information using TLVs (Type-Length-Value) to discover neighboring devices.
+
+Common TLVs include:
+
+System name and description
+Port name and description
+IP management address
+VLAN information
+Capabilities of the neighbor device
+MAC address
+MDI (Media Dependent Interface) power
+Link aggregation details
+
+
+LLDP Commands:
+
+To enable LLDP globally on a Cisco switch: lldp run
+
+
+To configure the LLDP transmission interval (default is 30 seconds):
+interface <interface-name>
+  lldp transmit
+
+Packet Format:
+
+LLDP information is transmitted via Ethernet frames at fixed intervals.
+Each frame contains an LLDP Data Unit (LLDPDU), which consists of TLV structures.
+Compulsory TLVs in an LLDP frame include:
+Chassis ID
+Port ID
+Time to Live (TTL)
+
+Applications of LLDP:
+
+Used in data center bridging requirements.
+Advertises Power over Ethernet (PoE) capabilities.
+
+Advantages of LLDP:
+
+Vendor-neutral: LLDP works on both Cisco and non-Cisco devices.
+Open standard: Recommended by Cisco and supported by various vendors.
+LLDP-MED extension: Provides additional features beyond CDP.
+
+Remember, LLDP enhances network visibility and promotes interoperability across different devices! 🌐🔍
