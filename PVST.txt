@@ -1,0 +1,42 @@
+Let’s delve into Per VLAN Spanning Tree (PVST+) and its rapid counterpart, Rapid PVST+. These protocols are essential for maintaining network stability and preventing loops in Ethernet networks. I’ll provide an overview and explain how to configure them.
+
+Overview of PVST+ and Rapid PVST+
+PVST+ (Per VLAN Spanning Tree Plus) creates a separate instance of the Spanning Tree Protocol (STP) for each VLAN. In each instance, different processes occur, including the selection of a unique root bridge and the assignment of distinct port roles.
+Rapid PVST+ is an improvement over the original STP standard (IEEE 802.1D). It implements the IEEE 802.1w standard (Rapid Spanning Tree Protocol, RSTP) on a per-VLAN basis. Rapid PVST+ allows faster convergence by enabling quicker adjustments to network topology changes.
+
+Key Concepts:
+Bridge ID and Priority:
+Each switch has a unique Bridge ID, which consists of a priority value (default is 32768) and the switch’s MAC address.
+The switch with the lowest Bridge ID becomes the root bridge for a specific VLAN.
+
+BPDU (Bridge Protocol Data Unit):
+BPDUs are messages exchanged between switches to determine the root bridge and maintain the spanning tree topology.
+BPDUs contain information such as the sender’s Bridge ID, path cost, and port roles.
+
+Port Roles:
+Root Port: The port closest to the root bridge.
+Designated Port: The port that forwards traffic toward the root bridge.
+Blocked Port: The port that is disabled to prevent loops.
+
+Path Cost:
+The cumulative cost of traversing a path from a switch to the root bridge.
+Calculated based on the link speed (e.g., Gigabit Ethernet has a lower cost than Fast Ethernet).
+
+Configuration Steps:
+
+Enable Rapid PVST+:
+Rapid PVST+ is the default STP mode on most switches.
+It operates per VLAN, allowing separate spanning trees for each VLAN.
+
+Verify Configuration:
+Confirm that Rapid PVST+ is active and functioning as expected.
+
+Example Configuration (Cisco Nexus 5000 Series):
+
+Enable Rapid PVST+:
+switch(config)# spanning-tree mode rapid-pvst
+
+Verify Configuration:
+switch# show spanning-tree summary
+
+Remember that PVST+ and Rapid PVST+ enhance network stability and reduce convergence time
