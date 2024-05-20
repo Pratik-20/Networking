@@ -1,0 +1,25 @@
+What is a Network?
+
+In the realm of information technology, a network refers to the connection of at least two computer systems. These systems can be linked either by physical cables or wireless connections. The fundamental idea is that there are multiple separate components, and they are interconnected.
+
+Let’s explore some key points about networks:
+
+Definition: 
+
+A network is a group of two or more computers or other electronic devices that are interconnected for the purpose of exchanging data and sharing resources1. These resources can include files, applications, and peripheral devices like printers.
+
+Types of Networks:
+
+Peer-to-Peer Network: The simplest network involves just two computers connected by a cable. In this setup, both participants have equal privileges, and each computer can access the data of the other device. They can also share resources like disk space and printers.
+
+Client-Server Network: More complex networks typically consist of multiple devices. In a client-server network, a central computer (the server) provides resources to other participants (the clients). For example, your home Wi-Fi network is a small client-server network, with devices wirelessly connected to the router acting as the central node.
+
+Network Example: Your Home Wi-Fi
+Imagine your home Wi-Fi network. Here’s how it fits the network definition:
+
+Devices: Your laptops, smartphones, tablets, smart TVs, and other gadgets.
+Central Node (Server): The router, which acts as the central hub for your household. It connects all devices wirelessly.
+Internet Connection: The router itself is connected to a much larger network—the Internet.
+Resource Sharing: Devices can communicate with each other without direct cable connections. For instance, you can send a print job to a Wi-Fi-enabled printer without physically connecting them1.
+Before modern networks, communication between computers was much more complicated, involving LAN cables and mechanical switches. Thankfully, today’s networks make our digital lives much smoother and interconnected.
+
