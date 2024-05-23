@@ -6,6 +6,8 @@ A port number is a logical address assigned to each application or process that 
 It uniquely identifies a network-based application on a computer.
 Each application or program is allocated a 16-bit integer port number.
 
+IP - 4.236.190.58:3389    Here in this example port no. is mentioned in the end after ":". i.e. 3389 - So this port no is used for RDP (Remote Desktop Protocol).
+
 Well-Known Ports:
 
 The port numbers in the range from 0 to 1023 (0 to 210 - 1) are known as well-known ports or system ports.
@@ -48,8 +50,8 @@ Socket Address is the combination of IP Address and Port Number. It is used in c
 
 Q. 3: Why Port Number is used?
 Answer:
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Port Number or Port is used to uniquely identify any appication/services running on the same device.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 Practical Application of Ports
