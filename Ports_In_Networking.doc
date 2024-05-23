@@ -57,6 +57,17 @@ As all of this activity is happening behind the scenes, we weren’t able to see
 
 Netstat stands for network statistics and it’s a command line tool that is used to display the current network connections and port activity on our computer.
 
+In command promp use below command to check current network connections:
+
+C:\Users\PTHORAWADE>netstat -n
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    127.0.0.1:14766        127.0.0.1:50881        TIME_WAIT
+  TCP    127.0.0.1:14766        127.0.0.1:51137        TIME_WAIT
+  TCP    127.0.0.1:14766        127.0.0.1:51475        FIN_WAIT_2
+  TCP    127.0.0.1:33000        127.0.0.1:51495        ESTABLISHED
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
