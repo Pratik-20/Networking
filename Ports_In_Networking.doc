@@ -34,7 +34,7 @@ Ports beyond the well-known range (1024 and above) are either registered or dyna
 Registered ports are assigned by the Internet Assigned Numbers Authority (IANA) for specific purposes but are not standardized or widely used.
 Dynamic ports are used for temporary connections and are dynamically allocated by the operating system.
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Q.1: What is Port?
 Answer:
 
@@ -48,8 +48,18 @@ Socket Address is the combination of IP Address and Port Number. It is used in c
 
 Q. 3: Why Port Number is used?
 Answer:
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Port Number or Port is used to uniquely identify any appication/services running on the same device.
+
+
+Practical Application of Ports
+As all of this activity is happening behind the scenes, we weren’t able to see how the IP address and port numbers were used. To cure this problem, we need to learn about Netstat utility.
+
+Netstat stands for network statistics and it’s a command line tool that is used to display the current network connections and port activity on our computer.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
