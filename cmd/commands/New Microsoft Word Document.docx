@@ -1,0 +1,16 @@
+Certainly! The tree command in Windows Command Prompt displays the directory structure of a specified path or drive in a tree format. Here are the key options available for the tree command:
+•	To display the names of all subdirectories on the disk in your current drive, type:
+•	tree \\
+•	To display, one screen at a time, the files in all directories on drive C, use:
+•	tree c:\\ /f | more
+•	To print a list of all directories on drive C to a file, type:
+•	tree c:\\ /f > <driveletter>:\\<filepath>\\filename.txt
+Here’s a brief explanation of the parameters:
+•	<drive>: Specifies the drive containing the disk for which you want to display the directory structure.
+•	<path>: Specifies the directory for which you want to display the directory structure.
+•	/f: Displays the names of the files in each directory.
+•	/a: Uses text characters instead of graphic characters to show the lines that link subdirectories.
+Remember that the structure displayed depends on the parameters you specify. If you don’t provide a drive or path, the command displays the tree structure beginning with the current directory of the current drive. You can also explore additional options and syntax by running tree /? in the Command Prompt.  Happy tree exploring! 🌳📂
+
+Learn More on this:	tree | Microsoft Learn
+
