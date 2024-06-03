@@ -1,0 +1,22 @@
+Let's explore the differences between `ping` and `ping -t`:
+
+1. **Ping**:
+   - The `ping` command is used to test the reachability of a host and measure the round-trip time (RTT) between the local machine and a remote address or machine.
+   - When you execute the `ping` command, it sends a small amount of data (an ICMP packet) to the destination host and waits for a response.
+   - If the system can establish a connection, it reports the "round trip time" for each packet.
+   - **Use Case**: Primarily used to test connectivity between devices and measure network latency¹³.
+
+2. **Ping -t**:
+   - The `ping -t` command is specific to Windows operating systems.
+   - Unlike the regular `ping`, which sends a fixed number of packets, `ping -t` sends continuous pings until you manually stop it.
+   - It's useful for monitoring network stability over time or checking if a host remains reachable.
+   - **Use Case**: Monitoring network availability and stability⁵.
+
+In summary, `ping` is used for one-time testing, while `ping -t` continuously sends pings until you stop it. Both commands help diagnose network issues and measure latency. 😊🌐
+
+Source: Conversation with Copilot, 3/6/2024
+(1) What’s a Ping? The Linux ‘Ping’ Command Explained - Linode. https://www.linode.com/content/whats-a-ping-linux-ping-command-explained/.
+(2) Difference between Ping and Traceroute - Scaler Topics. https://www.scaler.com/topics/difference-between-ping-and-traceroute/.
+(3) The Ping Command | Command Line Wizardry. https://www.commandlinewizardry.com/post/ping-command.
+(4) Difference Between Ping and Traceroute. https://www.prepbytes.com/blog/computer-network/difference-between-ping-and-traceroute/.
+(5) Traceroute vs. Ping: What’s the Difference and When to Use Each?. https://medium.com/@16kiran.rawat/traceroute-vs-ping-whats-the-difference-and-when-to-use-each-d3ed73892ef7.
