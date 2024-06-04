@@ -1,16 +1,16 @@
 Let's explore the differences between `ping` and `ping -t`:
 
-1. **Ping**:
+1. Ping:
    - The `ping` command is used to test the reachability of a host and measure the round-trip time (RTT) between the local machine and a remote address or machine.
    - When you execute the `ping` command, it sends a small amount of data (an ICMP packet) to the destination host and waits for a response.
    - If the system can establish a connection, it reports the "round trip time" for each packet.
-   - **Use Case**: Primarily used to test connectivity between devices and measure network latency¹³.
+   - **Use Case**: Primarily used to test connectivity between devices and measure network latency.
 
-2. **Ping -t**:
+2. Ping -t:
    - The `ping -t` command is specific to Windows operating systems.
    - Unlike the regular `ping`, which sends a fixed number of packets, `ping -t` sends continuous pings until you manually stop it.
    - It's useful for monitoring network stability over time or checking if a host remains reachable.
-   - **Use Case**: Monitoring network availability and stability⁵.
+   - **Use Case**: Monitoring network availability and stability.
 
 In summary, `ping` is used for one-time testing, while `ping -t` continuously sends pings until you stop it. Both commands help diagnose network issues and measure latency. 😊🌐
 
