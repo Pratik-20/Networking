@@ -1,0 +1,21 @@
+Let’s dive into the details of these IP configuration commands:
+
+ipconfig:
+When you run ipconfig without any parameters in the Command Prompt, it displays information about all network adapters on your Windows computer.
+This includes the following details:
+IPv4 Address: The local IP address assigned to your computer.
+IPv6 Address: The newer version of IP address that supports a larger address space.
+Subnet Mask: Determines the network portion of the IP address.
+Default Gateway: The IP address of the router or gateway that connects your local network to the internet.
+
+
+ipconfig /release:
+Running this command releases the IPv4 address of all network adapters.
+If you want to release the IPv6 address, use ipconfig /release6.
+To release the IP address for a specific adapter, type ipconfig /release [adapter].
+
+
+ipconfig /renew:
+After releasing the old IP address, you can use this command to request a new IP address for the client.
+It renews the DHCP configuration for all adapters.
+For a specific adapter, type ipconfig /renew [adapter].
