@@ -1,0 +1,53 @@
+        
+	Let’s create a flow diagram to illustrate your network setup:
+
+
+
+
+
+	+-------------------+
+        |                   |
+        |    ISP (Internet  |
+        |    Service        |      ISP: Your Internet Service Provider (ISP) provides internet connectivity to your location.
+        |    Provider)      |
+        |                   |
+        +-------------------+
+                |
+                v
+        +-------------------+
+        |                   |
+        |    Modem          |	   Modem: The modem connects to the ISP and retrieves necessary information (IP addresses, settings, etc.).
+        |                   |	
+        +-------------------+
+                |
+                v
+        +-------------------+
+        |                   |
+        |    MX 64 Router   |	   MX 64 Router: The MX 64 router connects to the modem. It handles routing, DHCP, and NAT functions.
+        |                   |
+        +-------------------+
+                |
+                v
+        +-------------------+
+        |                   |
+        |    MS210 Switch   |	   MS210 Switch: The switch connects to the MX router and provides additional ports for wired devices.
+        |                   |
+        +-------------------+
+                |
+                v
+        +-------------------+
+        |                   |
+        |    Access Points  |
+        |    or PCs         |	   AP Router/PC via Hardline: Devices like access points (APs) or PCs connect to the switch via Ethernet cables.
+        |                   |
+        +-------------------+
+                |
+                v
+        +-------------------+
+        |                   |
+        |    Security       |
+        |    Cameras        |	   Security Camera: Similarly, security cameras can connect to the switch for surveillance purposes or some
+        |                   |                       can be connected via wirelessly.
+        +-------------------+
+
+
