@@ -1,0 +1,80 @@
+MR Features:
+
+1. BYOD (Bring Your Own Device) and Guest Access Policies:
+   - BYOD policies allow employees to use personal devices for work.
+   - Guest access policies control network access for visitors or external users.
+
+2. Application Traffic Shaping:
+   - Shapes network traffic to prioritize critical applications.
+   - Ensures efficient bandwidth utilization and performance.
+
+3. Enterprise Security:
+   - Comprehensive security measures for an organization’s network.
+   - Includes firewalls, intrusion detection, and encryption.
+
+4. WIDS/WIPS (Wireless Intrusion Detection and Prevention System):
+   - Monitors and protects against unauthorized wireless access.
+   - Detects and prevents security threats in Wi-Fi networks.
+
+5. Location Analytics:
+   - Uses Wi-Fi data to analyze user movement within a physical space.
+   - Helps optimize layouts, marketing, and resource allocation.
+
+6. Wireless Health:
+   - Monitors Wi-Fi network performance and health.
+   - Identifies issues and ensures reliable connectivity.
+
+7. DNS Layer Protection (Umbrella Integration):
+   - Integrates DNS security with Cisco Umbrella.
+   - Blocks malicious domains and enhances overall security.
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+IPSK without Radius:
+
+- Identity Preshared Key (PSK):
+  - Assign policies based on PSK.
+  - No RADIUS server needed.
+  - Single SSID for multiple use cases.
+
+Imagine connecting three devices to a Meraki MR access point:
+
+BYOD (Bring Your Own Device) - Company Employee:
+Traditionally, we would create separate SSIDs (network names) for each type of device (e.g., BYOD, Sensor, Guest). This allows us to apply different access control lists (ACLs) based on the device type.
+Sensor (IoT Sensor):
+Similarly, we’d create a different SSID for IoT sensors.
+Guest (Visitors):
+Guests would have their own SSID as well.
+However, Meraki offers a convenient feature: Instead of managing multiple SSIDs, we can create just one SSID. The key lies in using different preshared keys (PSKs) for each device type. Each PSK corresponds to a specific ACL, allowing devices to connect securely to the AP/Wi-Fi.
+
+For example, the passkeys could be:
+
+BYOD: PSK1 - XXXXY1
+Sensor: PSK2 - XXXXYY2
+Guest: PSK3 - XXXXYYY3
+
+This simplifies the process and ensures efficient connectivity without the need for multiple SSIDs
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Local Authentication:
+
+- The Meraki Local Auth feature provides an alternative authentication method for connecting to 802.1X-protected SSIDs.
+- Unlike traditional RADIUS-based authentication, it doesn’t rely on external RADIUS servers.
+- Useful when RADIUS servers are remote or unreachable.
+
+How It Works:
+
+1. Username/Password Caching (Password Auth):
+   - When a user attempts to connect via 802.1X, the MR access point verifies their existence and authorization against a configured LDAP server.
+   - If successful, it caches a hash of the user’s credentials.
+   - If the LDAP server becomes unreachable, the MR access point consults its cache for authentication.
+
+2. Certificate Caching (Certificate Auth):
+   - The MR and client mutually authenticate using SSL certificates.
+   - MR uses a certificate signed by IdenTrust Commercial Root CA 1.
+   - Clients use their own certificates.
+   - Optionally, you can check certificate revocation status via an OCSP responder.
+
+Remember, with Meraki Local Auth, you get 802.1X without the need for an external RADIUS server! You can also verify if the certificate belongs to a valid WiFi user/device using an LDAP server. 😊
+
+-----------------------------------------------------------------------------------------------------------------------------------------
