@@ -1,0 +1,53 @@
+Let’s dive into what an SSID is:
+
+An SSID (Service Set Identifier) is the name of a Wi-Fi network. It serves as a unique identifier that allows devices to connect to that specific network. When you’re at a coffee shop or any other location with Wi-Fi, you’ll see SSIDs like “Coffee Shop Wi-Fi” or “Airport WiFi.” These names help users distinguish between different networks in the area and connect to the right one1234.
+
+Here are some key points about SSIDs:
+
+An SSID can be up to 32 characters long and is case-sensitive.
+Router manufacturers often provide default SSIDs like “Linksys” or “Netgear,” but you can customize it if you have administrative access to your Wi-Fi network.
+Devices remember SSIDs they’ve connected to before, which can lead to complications if there are multiple networks with the same name.
+If a network is secured (using WPA2 or another encryption), users need the passphrase to connect.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Definition: 
+An SSID is the technical term for the name of a Wi-Fi network. When you scan for Wi-Fi networks on a Wi-Fi-enabled device, the list of names you see represents different SSIDs nearby. These unique identifiers allow devices to distinguish one wireless network from another1.
+
+
+Functionality:
+SSIDs serve as network names, allowing devices to connect to the correct Wi-Fi network.
+They’re used by all types of Wi-Fi access points, including public networks and home Wi-Fi setups.
+Router manufacturers often provide default SSIDs like “Linksys” or “Netgear,” but you can customize it if you have administrative access to your Wi-Fi network.
+An SSID can be up to 32 characters long, case-sensitive, and may include spaces and special symbols.
+If a network is secured (using WPA2 or another encryption), users need the passphrase before connecting234.
+
+Multiple Networks with the Same SSID:
+If there are multiple Wi-Fi networks with the same SSID, devices will try to connect based on signal strength or the first network they encounter.
+If those networks have different passphrases, connection problems may arise.
+It’s best to avoid using the same SSID as your neighbor to prevent such issues.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+To configure or update the name of an SSID (Service Set Identifier) in Cisco Meraki, follow these steps:
+
+Log in to the Meraki Dashboard:
+
+Open a web browser and navigate to the Meraki Dashboard (dashboard.meraki.com).
+Log in with your credentials.
+
+Select the Wireless Network:
+
+In the dashboard, choose the “Wireless” option from the left-hand menu.
+
+Choose the SSID:
+
+You’ll see a list of configured SSIDs.
+Click on the SSID that you want to customize.
+
+Make the necessary changes:
+
+To enable or disable the SSID, select an option from the Enable drop-down menu and click Save Changes.
+To change the name of the SSID, click the rename button, enter the new name, and click Save Changes.
+
+----------------------------------------------------------------------------------------------------------------------------------------
