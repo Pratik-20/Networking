@@ -1,0 +1,42 @@
+What is header checksum:
+
+A header checksum is a value used in network protocols to ensure data integrity. It is calculated based on the contents of the header of a packet. When a packet is sent, the checksum is computed and included in the header. Upon receiving the packet, the recipient recalculates the checksum and compares it to the one sent. If they match, the packet is considered intact; if not, it indicates that the packet has been corrupted during transmission.
+
+This process helps detect errors in the data as it travels across the network, ensuring that the information received is the same as what was sent. It's commonly used in protocols like IP (Internet Protocol) to maintain data integrity.
+
+---------------------------------------------------------------------
+CMD to test NW related things:
+---------------------------------------------------------------------
+
+
+We can use the `ping` and `tracert` commands in the Command Prompt to gather some of this information. Here's a simple batch script that pings 8.8.8.8 and extracts the TTL (Time to Live) and round-trip time (which can give you an idea of data speed). For protocol and header checksum, you would typically need more advanced network analysis tools like Wireshark, but I'll show you what can be done with basic CMD commands:
+
+---------------------------------------------------------------------
+Below is the CMD code
+---------------------------------------------------------------------
+@echo off
+echo Pinging 8.8.8.8...
+ping -n 4 8.8.8.8 > ping_results.txt
+
+echo Extracting TTL and round-trip time...
+for /f "tokens=1,2,3,4,5,6 delims==<>" %%a in (ping_results.txt) do (
+    if "%%a"=="Reply" (
+        echo IP: %%b
+        echo Time: %%d
+        echo TTL: %%f
+    )
+)
+
+echo Tracing route to 8.8.8.8...
+tracert 8.8.8.8 > tracert_results.txt
+
+echo Results saved in ping_results.txt and tracert_results.txt
+pause
+------------------------------------------------------------------------
+
+This script will:
+1. Ping 8.8.8.8 four times and save the results to `ping_results.txt`.
+2. Extract and display the TTL and round-trip time from the ping results.
+3. Trace the route to 8.8.8.8 and save the results to `tracert_results.txt`.
+
+For more detailed analysis, including protocol and header checksum, you might want to use a tool like Wireshark, which can capture and analyze network packets in detail.
