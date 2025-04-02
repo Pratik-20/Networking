@@ -1,0 +1,29 @@
+1. AWS (Amazon Web Services): A comprehensive cloud computing platform offering Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).
+
+2. VPC (Virtual Private Cloud): A logically isolated section of AWS Cloud where users can launch resources in a customized network.
+
+3. Subnet: A segment of a VPC's IP range, enabling better resource allocation and network segmentation.
+
+4. Security Groups: Virtual firewalls that control inbound and outbound traffic to AWS instances.
+
+5. NACL (Network Access Control List): A security layer that operates at the subnet level to manage traffic control rules.
+
+6. Route Table: Defines how network traffic is directed within a VPC.
+
+7. Elastic Load Balancer (ELB): Distributes incoming traffic across multiple targets (EC2 instances, containers, IPs) to optimize application performance.
+
+8. AWS Direct Connect: A dedicated network connection service to securely link on-premises networks with AWS.
+
+9. VPN (Virtual Private Network): An encrypted connection between on-premises infrastructure and AWS resources.
+
+10. AWS Transit Gateway: A scalable network transit hub for interconnecting multiple VPCs and on-premises networks.
+
+Route 53: A scalable and highly available Domain Name System (DNS) service that helps route end-user requests to AWS applications and resources. It also provides domain registration and health checking functionalities.
+
+S3 Bucket (Amazon Simple Storage Service): A scalable object storage service designed for storing and retrieving any amount of data, such as files, backups, and static website assets.
+
+EC2 Instance (Amazon Elastic Compute Cloud): A virtual machine in AWS that allows users to run applications with flexible compute capacity. It supports multiple instance types and configurations for varied workloads.
+
+AWS Glue: A fully managed Extract, Transform, and Load (ETL) service that helps prepare and organize data for analytics and machine learning.
+
+Amazon Athena: A serverless interactive query service that allows users to analyze data stored in Amazon S3 using standard SQL, without requiring complex infrastructure setup.
